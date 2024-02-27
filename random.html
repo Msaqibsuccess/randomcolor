@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: rgba(0, 0, 255, 0.767);
+        }
+
+        button {
+        
+            border-radius: 30px;
+            color: white;
+            border: 2PX solid white;
+            background-color: transparent;
+            outline: none;
+            padding: 20px 50px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="changecolor()">Click me</button>
+
+    <script>
+
+        function changecolor() {
+
+            document.body.style.backgroundColor =
+                'rgb(' + Math.round(Math.random() * 255) +
+                ',' + Math.round(Math.random() * 255) + 
+                ',' + Math.round(Math.random() * 255) + ')';
+
+        }
+
+    </script>
+</body>
+
+</html>
